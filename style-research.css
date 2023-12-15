@@ -4,56 +4,55 @@
     box-sizing: border-box;
 }
 
-html,
-body {
-    font-family: Helvetica, sans-serif;
-}
-
 body {
     cursor: url(./images/cursor-normal.png), none;
-}
-
-.nav {
-    position: fixed;
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    z-index: 999;
-    background-color: white;
-}
-
-.nav-item {
     font-family: Helvetica, sans-serif;
-    font-weight: lighter;
-    font-size: 20px;
-    color: black;
-    margin: 0;
-    padding: 10px;
-}
-
-.nav-item a {
-    color: rgb(184, 184, 184);
-    text-decoration: none;
-    cursor: url(./images/cursor-hover.png), none;
-}
-
-.nav-item a:hover {
-    color: black;
 }
 
 .flex-container {
     display: flex;
+    flex-wrap: nowrap;
+    margin: 0;
+    padding: 0;
+}
+
+.flex-item-left {
+    flex: 40%;
+    max-width: 40%;
+    margin: 15px 15px 0px 15px;
+    font-family: Helvetica, sans-serif;
+    font-size: 11px;
+    position: fixed;
+    overflow-y: auto;
+}
+
+.flex-item-left a {
+    text-decoration: none;
+    cursor: url(./images/cursor-hover.png), none;
+    color: black;
+}
+
+.flex-item-right {
+    flex: 60%;
+    max-width: 60%;
+    margin: 15px 0px 0px;
+    margin-left: 40%;
+    overflow-y: auto;
+    margin-right: 5px;
+}
+
+.flex-container2 {
+    display: flex;
     flex-wrap: wrap;
     margin: 0px;
-    padding: 30px 0px 0px;
+    padding: 0px;
 }
 
 .column {
     flex: 25%;
     max-width: 25%;
     margin: 0;
-    padding: 5px; 
+    padding: 0px 5px 0px; 
 }
 
 .column img {
@@ -65,6 +64,5 @@ body {
 .main-text {
     margin-top: 10px;
     font-family: Helvetica, sans-serif;
-    font-weight: lighter;
-    font-size: 13px;
+    font-size: 11px;
 }
